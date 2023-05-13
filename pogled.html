@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+
+	</Div>
+	<Ul Class="Slideshow">
+	<Li>
+	<Span Class="Img-Bg-Slide">Image 01</Span>
+	</Li>
+	<Li>
+	<Span Class="Img-Bg-Slide">Image 02</Span>
+	</Li>
+	<Li>
+	<Span Class="Img-Bg-Slide">Image 03</Span>
+	</Li>
+	<Li>
+	<Span Class="Img-Bg-Slide">Image 04</Span>
+	</Li>
+	</Ul>
+	
+	<title>Pogled | Apartments with a View</title>
+	
+	
+	<style>
+		/* BG SLIDESHOW CSS */
+		.Slideshow,
+		.Slideshow::After {
+		Position:fixed;
+		Width: 100%;
+		Height: 100%;
+		Top: 0px;
+		Left: 0px;
+		Z-Index: -1px;
+		}
+		.Slideshow::After {
+		Content: '';
+		
+		}
+		.Img-Bg-Slide {
+		Width: 100%;
+		Height: 100%;
+		Position: Absolute;
+		Top: -22px;
+		Left: 0px;
+		Color: Transparent; /*Hides Span's Text*/
+		Background-Size: Cover; /* Covers Whole Viewport */
+		Background-Position: 100% 100%;
+		Background-Repeat: None;
+		Opacity: 0;
+		Z-Index: -1;
+		Animation: BackgroundSlideshow 75s Linear Infinite 0s;
+		}
+		.Slideshow Li:nth-Child(1) .Img-Bg-Slide {
+		Background-Image: Url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/408796152.jpg?k=83aa908b2c6ab997a182dc33dc4763d0bea17d1d32d299ac179e1d3745491143&o=&hp=1');
+		}
+		.Slideshow Li:nth-Child(2) .Img-Bg-Slide { 
+		Background-Image: Url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/415265846.jpg?k=0810c51fde783fdbdf2ca3660bec40619bfa3666cf108cf3f122f38af8393c4b&o=&hp=1');
+		Animation-Delay: 15s; 
+		}
+		.Slideshow Li:nth-Child(3) .Img-Bg-Slide { 
+		Background-Image: Url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/412557110.jpg?k=125b6518a55428364b50e651f5c826fe318b66463fa0cb5f7bf397661cd2b591&o=&hp=1');
+		Animation-Delay: 30s; 
+		}
+		.Slideshow Li:nth-Child(4) .Img-Bg-Slide { 
+		Background-Image: Url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/412556874.jpg?k=c8dd0c9b09b5eb9ea7d970e4faf28a4979d40a05a66d79e855be29092fa8e44b&o=&hp=1');
+		Animation-Delay: 45s; 
+		}
+		.Slideshow Li:nth-Child(5) .Img-Bg-Slide { 
+		Background-Image: Url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/408796334.jpg?k=a3bf3b968bf1e0f8bad1d5e5a906c8b8a2e4b6996c9e39c01bf5184b995d2fb4&o=&hp=1');
+		Animation-Delay: 60s;
+		}
+		@Keyframes BackgroundSlideshow {
+		0% { Opacity: 0;}
+		12.5% { Opacity: 0.2;}
+		25% { Opacity: 0.3;}
+		37.5% { Opacity: 0;}
+		100% { Opacity: 0;} 
+		}
+
+	.rounded-button-container {
+     display: flex;
+	justify-content: center;
+	}
+	
+	.rounded-button {
+	align-items: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	border-radius: 10%;
+	transition: transform .2s;
+	width: 500px;
+	height: 500px;
+	background-color: rgb(199, 199, 199);
+	color: #fff;
+	font-size: 55px;
+	font-weight: bold;
+	text-align: center;
+    	overflow: hidden;
+     margin: 0 30px;
+	text-shadow: 2px 2px 5px black;
+	}
+
+	.rounded-button img {
+	width: 800px;
+	height: auto;
+	object-fit: cover;
+	position: relative;right: 0px;bottom:15px;
+	z-index: 0;
+	opacity: 0.8;
+	}
+
+
+	.rounded-button div {
+    	position: absolute;
+	color: #e7e7e7d5;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+	z-index: 1;
+	transition: font-size .2s;
+
+  	}
+	
+	.rounded-button:hover {
+  	transform: scale(1.07); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	opacity: 1;
+	font-size: 60px;
+
+
+	}
+	
+	body {
+		
+		@font-face {
+    			font-family: 'Trebuchet MS';
+    			font-style: normal;
+    			font-weight: normal;
+    			src: local('Trebuchet MS'), url('trebuc.woff') format('woff');
+    		}
+    
+
+		text-align: center;
+		position: Absolute;
+		font-size: 150%;
+		opacity: 0;
+		z-index: 50;
+		animation-delay: 0.5s;
+		animation: fadein 2.5s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		font-family: 'Trebuchet MS', sans-serif;
+		}
+
+
+		.Main-Heading {
+		Opacity: 1;
+		Position: Absolute;
+		Width: 50%;
+		Font-Size: 3rem;
+		Z-Index: 50;
+		Top: 2em;
+		Left: 2em;
+		Color: #000000;
+		}
+
+
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}		
+		@keyframes fadeout {
+			from {
+				opacity: 1;
+			}
+			to {
+				opacity: 0;
+			}
+		}
+
+		 
+	</style>
+</head>
+<body bgcolor="#71c3c7">
+</body>
+
+	<header>
+		<h1 style=font-size:130px;z-index:index 150;>Dobrodošli u Pogled!</h1>
+		<h1><big>Vaš odmor sa pogledom.</big></h1>
+	</header>
+
+	<br/>
+
+	<main>
+		<section id="apartmani">
+			<h2>Naši Apartmani i kuće za odmor</h2>
+			<p>Experience the best views in town from the comfort of your own home at Pogled. Choose from a variety of spacious apartments, all with breathtaking views of the city or natural surroundings.</p>
+
+		<section id="lokacija">
+			<h2>Lokacija</h2>
+			<p>Nalaze se u prirodnom okruženju idealno za odmor od svega urbanog.
+				<br/>
+			Na samo 65km od Beograda na korak od Aranđelovca, između tri vinarije, nekoliko restorana čeka vas vaš odmor sa pogledom.
+				<br/>
+			Više informacija o kućama i apartmanima možete naći na linkovima ipod:
+			</p>
+		</section>
+		
+		<br/>
+			<div class="rounded-button-container">
+			<div class="rounded-button">
+			     <a href="https://www.booking.com/hotel/rs/vila-pogled-arandelovac1.en-gb.html">
+				<div>Vila POGLED</div>
+				<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/336258143.jpg?k=c23b29fdfb38eafe7413bcc41dc47bfc518adcbae48dcd45930e1fc15d0c7239&o=&hp=1" alt="Button Icon">
+			
+		     </div>
+		  </a>
+			<div class="rounded-button-container">
+			<div class="rounded-button">
+				<a href="https://www.booking.com/hotel/rs/imanje-pogled.en-gb.html">
+				<div>Imanje POGLED</div>
+				<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/408796240.jpg?k=3df07ccb1df6a486e34a6aad0d9365ab807879f0c5defd80d20b8f4a53847cd2&o=&hp=1" alt="Button Icon">
+			
+			</div>
+		  </a>
+
+		
+
+		
+		</section>
+		<section id="contact">
+			<h2>Kontaktirajte nas</h2>
+			<p>Ready to make Pogled your new home? Contact us to schedule a tour and see for yourself why Pogled is the perfect place to call home.</p>
+			<p><big><b> Broj telefona:</b> 
+				<br/>064 2886612
+				<br/>065 5550102</big></p>
+		
+		</section>
+	</main>
+	<footer>
+		<p>Copyright 2021 Pogled</p>
+	</footer>
+</body>
+</html>
