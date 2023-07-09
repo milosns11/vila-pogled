@@ -51,6 +51,11 @@ div.desc {
   display: table;
   clear: both;
 }
+.video-mask{
+    width: 350px;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
 </style>
 </head>
 <body>
@@ -103,8 +108,9 @@ div.desc {
   <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
 </div>
 
-		
-<video width="320" height="240" autoplay muted loop>
-  <source src="vila_1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<div class="video-mask">		
+	<video width="320" height="240" autoplay muted loop>
+  	  <source src="vila_1.mp4" type="video/mp4">
+	  Your browser does not support video.
+	</video>
+</div>
