@@ -8,10 +8,12 @@
 div.gallery {
   border: 5px solid #ccc;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 div.gallery:hover {
   border: 5px solid #777;
+  transform: scale(1.07)
 }
 
 div.gallery img {
@@ -19,6 +21,7 @@ div.gallery img {
   height: auto;
   object-fit: cover;
   position: relative;
+  overflow: hidden;
 	
 }
 
@@ -40,7 +43,7 @@ div.desc {
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0px 0;
   }
 }
 
