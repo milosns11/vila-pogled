@@ -45,12 +45,12 @@
 		Width: 100%;
 		Height: 100%;
 		Position: Absolute;
-		Top: -22px;
+		Top: 0px;
 		Left: 0px;
 		Color: Transparent; /*Hides Span's Text*/
 		Background-Size: Cover; /* Covers Whole Viewport */
 		Background-Position: 100% 100%;
-		Background-Repeat: None;
+		Background-Repeat: repeat;
 		Opacity: 0;
 		Z-Index: -1;
 		Animation: BackgroundSlideshow 75s Linear Infinite 0s;
@@ -77,8 +77,8 @@
 		@Keyframes BackgroundSlideshow {
 		0% { Opacity: 0;}
 		12.5% { Opacity: 0.2;}
-		25% { Opacity: 0.3;}
-		37.5% { Opacity: 0;}
+		25% { Opacity: 0.5;}
+		37.5% { Opacity: 0.2;}
 		100% { Opacity: 0;} 
 		}
 
