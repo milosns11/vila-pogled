@@ -4,7 +4,7 @@ body
 
 
 
-      @media (max-width:1200px)
+      @media (max-width:1100px)
       {
          zoom: 90%;
       }
@@ -30,7 +30,7 @@ h1{
    animation-duration: 4s;
    letter-spacing: 1rem;
 
-         @media (max-width:1200px)
+         @media (max-width:1100px)
          {
       
          font-size: 5.2rem;
@@ -55,7 +55,7 @@ div.socials
    left: 0vw;
    flex-direction: row;
    bottom: 0px;
-         @media (max-width:1200px)
+         @media (max-width:1100px)
       {
          zoom:110%
       }
@@ -77,7 +77,7 @@ img.footerimg
 
 
    position: relative;
-      @media (max-width:1200px)
+      @media (max-width:1100px)
       {
          zoom:110%
       }
@@ -90,7 +90,7 @@ img.footerimg
 
 p.footer
 {
-      @media (max-width:1200px)
+      @media (max-width:1100px)
          {
    font-size: 3.4rem;
    font-weight: bold;
@@ -111,7 +111,7 @@ div.footer
    z-index: 1;
 
    justify-content: center;
-               @media (max-width:1200px)
+               @media (max-width:1100px)
          {
 
             flex-direction: column-reverse;
@@ -144,7 +144,7 @@ a.button
    max-width: 4.7rem;
    max-height: 1.6rem;
    margin-bottom: 80px;
-            @media (max-width:1200px)
+            @media (max-width:1100px)
          {
       
          font-size: 4rem;
@@ -183,7 +183,7 @@ p{
 
 
 
-      @media (max-width:1200px)
+      @media (max-width:1100px)
       {
       max-width: 860px;
      /* font-size: 36px;*/
@@ -210,7 +210,7 @@ div.forwards
    overflow: auto;
    
 
-   @media (max-width:1200px)
+   @media (max-width:1100px)
    {
       flex-direction: column-reverse;
    }
@@ -240,7 +240,7 @@ div.gallery
 
    
 
-   @media (max-width:1200px)
+   @media (max-width:1100px)
    {
       
    }
@@ -259,7 +259,7 @@ div.reverse{
    flex-direction: row;
    overflow: auto;
    
-   @media (max-width:1200px)
+   @media (max-width:1100px)
    {
       flex-direction: column;
    }
@@ -284,7 +284,7 @@ img.gallery
 
    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.178);
    
-      @media (max-width:1000px)
+      @media (max-width:1100px)
       {
 
             width: 45vw;
@@ -327,7 +327,7 @@ img.mainimage
    margin-bottom: 1cm;
    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.178);
    
-      @media (max-width:1000px)
+      @media (max-width:1100px)
       {
       width: 90%;
       height: auto;
